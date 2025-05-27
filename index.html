@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/main-style.css">
     <link rel="stylesheet" href="./src/styles/custom-glide.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-
     <title>Honey Production Company</title>
   </head>
   <body class="font-display relative">
@@ -36,36 +34,34 @@
     </header>
 
     <!-- offcanvas header menu -->
-    <div class="h-screen w-full background-primary transition-transform -translate-x-full fixed top-0 left-0 z-50" id="offcanvas">
-      <div class="custom-container flex-col pt-8 pb-4">
-        <div class="flex justify-between items-center">
-          <div class="flex justify-center items-center">
-            <a href="/">
-              <img src="/img/logo.svg" alt="logo-image" class="w-50"/>
-            </a>
-          </div>
-          <div class="ml-8 lg:hidden mr-6">
-            <button type="button" class="cursor-pointer" id="btn-close-offcanvas">
-              <i class="fa-solid fa-xmark fa-xl"></i>
-            </button>
-          </div>
+    <div class="h-screen w-full background-primary transition-transform -translate-x-full fixed top-0 left-0 z-50 overflow-hidden" id="offcanvas">
+      <div class="custom-container pt-8 pb-4">
+        <div class="">
+          <a href="/">
+            <img src="/img/logo.svg" alt="logo-image" class="w-50"/>
+          </a>
         </div>
-        <div class="mt-20 text-center">
-          <ul class="flex flex-col justify-between w-full font-semibold">
-            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
-              <a href="#about-us" class="hover:text-primary links-offcanvas">About us</a>
-            </li>
-            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
-              <a href="#store" class="hover:text-primary links-offcanvas">Store</a>
-            </li>
-            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
-              <a href="#testimonials" class="hover:text-primary links-offcanvas">Testimonials</a>
-            </li>
-            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
-              <a href="#contact-us" class="hover:text-primary links-offcanvas">Contact Us</a>
-            </li>
-          </ul>
+        <div class="">
+          <button type="button" class="cursor-pointer" id="btn-close-offcanvas">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </button>
         </div>
+      </div>
+      <div class="mt-20 text-center">
+        <ul class="flex flex-col justify-between w-full font-semibold">
+          <li class="px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+            <a href="#about-us" class="hover:text-primary links-offcanvas">About us</a>
+          </li>
+          <li class="px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+            <a href="#store" class="hover:text-primary links-offcanvas">Store</a>
+          </li>
+          <li class="px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+            <a href="#testimonials" class="hover:text-primary links-offcanvas">Testimonials</a>
+          </li>
+          <li class="px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+            <a href="#contact-us" class="hover:text-primary links-offcanvas">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
 

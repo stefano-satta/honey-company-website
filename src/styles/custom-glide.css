@@ -1,0 +1,32 @@
+@import './main-style.css';
+
+
+/*.glide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+.glide__slide {
+    text-align: center;
+    height: 400px;
+    color: var(--color-white);
+    background: var(--color-white);
+}
+.glide__bullets { bottom: -2em;}
+.glide__bullet { background-color: var(--color-grey); box-shadow: none; border: 0;}
+.glide__bullet:hover, .grid__bullet:focus {border: 0; background-color: var(--color-grey);}
+.glide__bullet.glide__bullet--active { background-color: var(--color-text-primary) }
+.glide__arrow {
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    color: var(--color-grey);
+}
+.glide__arrow:hover {color: var(--color-text-primary)}
+.glide__arrow--left {left: -3em;}
+.glide__arrow--right {right: -3em;}
+
+@media screen and (max-width: 767px) {
+    .glide__arrow--left {left: -1em;}
+    .glide__arrow--right {right: -1em;}
+}

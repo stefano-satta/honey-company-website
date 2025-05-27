@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/main-style.css">
+    <link rel="stylesheet" href="./src/styles/custom-glide.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+    <title>Honey Production Company</title>
+  </head>
+  <body class="font-display relative">
+    <!-- header navigation -->
+    <header class="background-primary">
+      <div class="custom-container pt-8 pb-4 text-text-primary">
+        <div>
+          <a href="/">
+            <img src="/img/logo.svg" alt="logo-image" class="w-50"/>
+          </a>
+        </div>
+        <nav class="flex justify-between items-center">
+          <ul class="hidden lg:flex justify-between w-full font-semibold">
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary"><a href="#about-us" class="hover:text-primary">About us</a></li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary"><a href="#store" class="hover:text-primary">Store</a></li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary"><a href="#testimonials" class="hover:text-primary">Testimonials</a></li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary"><a href="#contact-us" class="hover:text-primary">Contact Us</a></li>
+          </ul>
+          <div class="ml-8 lg:hidden mr-6">
+            <button type="button" class="cursor-pointer" id="menu-toggle-mobile">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- offcanvas header menu -->
+    <div class="h-screen w-full background-primary transition-transform -translate-x-full fixed top-0 left-0 z-50" id="offcanvas">
+      <div class="custom-container flex-col pt-8 pb-4">
+        <div class="flex justify-between items-center">
+          <div class="flex justify-center items-center">
+            <a href="/">
+              <img src="/img/logo.svg" alt="logo-image" class="w-50"/>
+            </a>
+          </div>
+          <div class="ml-8 lg:hidden mr-6">
+            <button type="button" class="cursor-pointer" id="btn-close-offcanvas">
+              <i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+          </div>
+        </div>
+        <div class="mt-20 text-center">
+          <ul class="flex flex-col justify-between w-full font-semibold">
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+              <a href="#about-us" class="hover:text-primary links-offcanvas">About us</a>
+            </li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+              <a href="#store" class="hover:text-primary links-offcanvas">Store</a>
+            </li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+              <a href="#testimonials" class="hover:text-primary links-offcanvas">Testimonials</a>
+            </li>
+            <li class="mr-6 px-4 py-2 border-b-2 border-b-transparent hover:border-secondary">
+              <a href="#contact-us" class="hover:text-primary links-offcanvas">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- first hero-->
+      <section class="background-primary h-[calc(100vh-97.523px)] bg-[url(/img/first_hero.png)] bg-center bg-cover bg-no-repeat">
+        <div class="custom-container h-full">
+          <div class="full-w full-h pl-8">
+            <p class="tracking-(--letter-spacing) text-primary font-semibold">100% ORGANIC HONEY</p>
+            <h1 class="text-6xl md:text-8xl font-bold text-text-primary mt-10 mb-8 font-asap">HONEYBEE</h1>
+            <hr class="w-16 h-1 bg-primary border-none">
+            <p class="text-pretty mt-6 text-lg font-light">We offer a great assortment of pure raw honey from our swaths in <br> California. Order honey from our honeycombs!</p>
+            <button type="button" class="button button-primary mt-10">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- what we do -->
+      <section class="background-primary py-50">
+        <p class="tracking-(--letter-spacing) text-primary font-semibold text-center">SERVICES</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-text-primary mt-10 mb-6 font-asap text-center">WHAT WE DO</h2>
+        <hr class="w-16 h-1 bg-primary border-none mx-auto">
+        <p class="text-pretty mt-6 text-lg text-center font-light">
+          Our family-owned company is engaged with everything related to honey and its <br> production. Learn more below about our services.
+        </p>
+        <div class="custom-container mt-12">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide flex flex-col items-center py-12 px-8 rounded-lg">
+                  <img src="/img/honey-shop.svg" alt="honey-shop-icon" class="w-20">
+                  <h3 class="text-text-primary font-asap font-bold mt-6 text-2xl">Honey Shop</h3>
+                  <p class="text-black mt-6">We offer over 10 types of organic raw honey in our online store.</p>
+                  <a href="#" class="mt-8 text-secondary font-semibold">Learn more</a>
+                </li>
+                <li class="glide__slide flex flex-col items-center py-12 px-8 rounded-lg">
+                  <img src="/img/honey-supplments.svg" alt="honey-shop-icon" class="w-20">
+                  <h3 class="text-text-primary font-asap font-bold mt-6 text-2xl">Supplements</h3>
+                  <p class="text-black mt-6">You can buy bee pollen, propolis, and hive mixtures.</p>
+                  <a href="#" class="mt-8 text-secondary font-semibold">Learn more</a>
+                </li>
+                <li class="glide__slide flex flex-col items-center py-12 px-8 rounded-lg">
+                  <img src="/img/beekeeping-classes.svg" alt="honey-shop-icon" class="w-20">
+                  <h3 class="text-text-primary font-asap font-bold mt-6 text-2xl">Beekeeping Classes</h3>
+                  <p class="text-black mt-6">Feel free to book excursions and workshops at our swaths.</p>
+                  <a href="#" class="mt-8 text-secondary font-semibold">Learn more</a>
+                </li>
+                <li class="glide__slide flex flex-col items-center py-12 px-8 rounded-lg">
+                  <img src="/img/honey-production.svg" alt="honey-shop-icon" class="w-20">
+                  <h3 class="text-text-primary font-asap font-bold mt-6 text-2xl">Honey Production</h3>
+                  <p class="text-black mt-6">We produce, bottle, and sell honey harvested by our beekeepers.</p>
+                  <a href="#" class="mt-8 text-secondary font-semibold">Learn more</a>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="fa-solid fa-chevron-left fa-2xl"></i>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i class="fa-solid fa-chevron-right fa-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about beehoney -->
+      <section class="background-primary bg-[url(/img/about-hero.png)] bg-center bg-cover bg-no-repeat pb-30" id="about-us">
+        <div class="custom-container flex-wrap lg:flex-nowrap">
+          <div>
+            <img src="/img/bee-honey.png" alt="bee-honey-image">
+          </div>
+          <div class="self-start mt-10 pl-4">
+            <p class="tracking-(--letter-spacing) text-primary font-semibold">WHY CHOOSE US</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-text-primary mt-10 mb-6 font-asap">ABOUT BEEHONEY</h2>
+            <hr class="w-16 h-1 bg-primary border-none">
+            <p class="text-pretty mt-6 text-lg font-light">
+              We are a family-owned business managing 5+ swaths in California. We bottle our honey with love and care.
+            </p>
+
+            <div class="mt-16">
+              <div class="flex mb-10 items-start">
+                <img src="/img/natural-env.svg" alt="honey-shop-icon" class="w-18 md:w-22">
+                <div class="pl-4">
+                  <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Natural Environment</h3>
+                  <p class="text-pretty text-lg">Our swaths are located in ecologically clean areas in California. The bees feel really happy there!</p>
+                </div>
+              </div>
+              <div class="flex mb-10 items-start">
+                <img src="/img/cert-prod.svg" alt="honey-shop-icon" class="w-18 md:w-22">
+                <div class="pl-4">
+                  <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Certified Honey Production</h3>
+                  <p class="text-pretty text-lg">We produce 100% organic raw honey without pasteurization or filtration processes.</p>
+                </div>
+              </div>
+              <div class="flex mb-10 items-start">
+                <img src="/img/fast-shipping.svg" alt="honey-shop-icon" class="w-18 md:w-22">
+                <div class="pl-4">
+                  <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Fast Shipping</h3>
+                  <p class="text-pretty text-lg">We are really fast at shipping, so you can enjoy our honey in a couple of days after your order!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how honey is mde - video -->
+      <section class="background-primary bg-[url(/img/how-honey-is-made.png)] bg-center bg-cover bg-fixed bg-no-repeat pb-30 min-h-[600px]">
+      </section>
+
+      <!-- store -->
+      <section class="background-primary bg-[url(/img/store-hero.png)] bg-contain bg-no-repeat pt-30 pb-80 relative" id="store">
+        <p class="tracking-(--letter-spacing) text-primary font-semibold text-center">STORE</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-text-primary mt-10 mb-6 font-asap text-center">OUR HONEY</h2>
+        <hr class="w-16 h-1 bg-primary border-none mx-auto">
+        <p class="text-pretty mt-6 text-lg text-center px-2 font-light">
+          Shop our best honey bottled this season. We produce only natural, raw, and sweet honey <br>
+          without any impurities or additives. If you want to buy honey, hurry up!
+        </p>
+        <div class="custom-container mt-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-14">
+            <div class="text-center">
+              <img src="/img/honey-store-1.png" alt="honey-store-img"/>
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Buckwheat Honey</h3>
+              <p class="text-secondary font-semibold text-semibold text-xl">$ 10,00 USD</p>
+              <button type="button" class="button button-primary mt-10">Buy Now</button>
+            </div>
+            <div class="text-center">
+              <img src="/img/honey-store-2.png" alt="honey-store-img"/>
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Buckwheat Honey</h3>
+              <p class="text-secondary font-semibold text-semibold text-xl">$ 15,00 USD</p>
+              <button type="button" class="button button-primary mt-10">Buy Now</button>
+            </div>
+            <div class="text-center">
+              <img src="/img/honey-store-3.png" alt="honey-store-img"/>
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Buckwheat Honey</h3>
+              <p class="text-secondary font-semibold text-semibold text-xl">$ 10,00 USD</p>
+              <button type="button" class="button button-primary mt-10">Buy Now</button>
+            </div>
+            <div class="text-center">
+              <img src="/img/honey-store-4.png" alt="honey-store-img"/>
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-2">Buckwheat Honey</h3>
+              <p class="text-secondary font-semibold text-semibold text-xl">$ 12,00 USD</p>
+              <button type="button" class="button button-primary mt-10">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full absolute bottom-0 left-0 z-0">
+          <img src="/img/honey-drop.webp" alt="honey-drop-image"/>
+        </div>
+      </section>
+
+      <!-- how to order -->
+      <section class="bg-secondary min-h-[600px] relative pt-20 pb-40">
+        <div class="custom-container flex-col relative z-10">
+          <p class="tracking-(--letter-spacing) text-primary font-semibold text-center">HOW TO ORDER</p>
+          <h2 class="text-4xl md:text-5xl font-bold text-text-primary mt-10 mb-6 font-asap text-center">WANT TO ORDER HONEY?</h2>
+          <hr class="w-16 h-1 bg-primary border-none mx-auto">
+          <p class="text-pretty mt-6 text-lg text-center px-2 font-light">
+            We are a small family-owned swath chain in California and we produce a limited amount of <br>
+            honey every season. If you want to buy honey, the information below is for you:
+          </p>
+          <div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 mt-12">
+            <div class="flex flex-col items-center text-center">
+              <img src="/img/img-order-1.svg" alt="" class="w-45 mb-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-4">1. Wait a bit</h3>
+              <p class="text-pretty text-lg">We harvest honey approximately 4 times a year, excluding winter.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <img src="/img/img-order-2.svg" alt="" class="w-45 mb-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-4">2. Choose Honey Type</h3>
+              <p class="text-pretty text-lg">Depending on the season, there may be different types of recently bottled honey on our site.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <img src="/img/img-order-3.svg" alt="" class="w-45 mb-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-text-primary font-asap mb-4">3. Order & Enjoy</h3>
+              <p class="text-pretty text-lg">We are really quick at shipping, so you'll get your parcel in a couple of days.</p>
+            </div>
+          </div>
+          <button type="button" class="button button-primary hover:bg-text-primary mt-20 mx-auto px-10 py-4">Have a Special Request?</button>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+      <section class="pt-40 pb-40 bg-text-primary" id="testimonials">
+        <div class="custom-container flex-col">
+          <p class="tracking-(--letter-spacing) text-secondary font-semibold text-center">TESTIMONIALS</p>
+          <h2 class="text-4xl md:text-5xl font-bold text-white mt-10 mb-6 font-asap text-center">WHAT OUR CLIENTS SAY</h2>
+          <hr class="w-16 h-1 bg-secondary border-none mx-auto">
+          <p class="text-pretty mt-6 text-lg text-center px-2 text-white">
+            We are glad that our honey is to our clients' liking. Your reviews and warm words of <br> appreciation make us better!
+          </p>
+          <div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 mt-14">
+            <div class="flex flex-col items-center text-center bg-text-primary-light py-14 px-10">
+              <img src="/img/testimonial-man.png" alt="" class="w-40">
+              <h3 class="text-2xl md:text-3xl font-bold text-secondary font-asap my-6">Dean Nillstrom</h3>
+              <p class="text-white italic font-light">
+                This is great honey, 100% natural! It is not the first time I order honey from this company, and every time I know that I will get delicious,
+                high-quality, not crystallized honey. I use honey as a topping for pancakes, various desserts, and marinades. It is delicious and my children also
+                like this honey!
+              </p>
+              <div class="font-semibold text-white mt-10">February 12, 2024</div>
+            </div>
+            <div class="flex flex-col items-center text-center bg-text-primary-light py-14 px-10">
+              <img src="/img/testimonial-woman.png" alt="" class="w-40">
+              <h3 class="text-2xl md:text-3xl font-bold text-secondary font-asap my-6">Diana Fergusson</h3>
+              <p class="text-white italic font-light">
+                Having tasted this honey once, I no longer needed alternatives. This is the tastiest honey I've ever tried! I buy different types of honey,
+                from clover to buckwheat. Each jar of honey is a real triumph of taste. This is real honey — thick, aromatic, dark, and moderately sweet. Exactly
+                what I need!
+              </p>
+              <div class="font-semibold text-white mt-10">April 18, 2024</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- counters -->
+      <section class="background-primary-darker py-16">
+        <div class="custom-container flex-col">
+          <div class="grid grid-rows-2 lg:grid-rows-1 grid-cols-2 lg:grid-cols-4 gap-y-16 w-full">
+            <div class="flex flex-col text-center">
+              <div class="text-2xl md:text-5xl text-primary font-asap font-bold mb-6">2574</div>
+              <hr class="w-16 h-1 bg-text-primary border-none mx-auto">
+              <p class="mt-6 text-text-primary font-semibold">Honey jars produced in 2022</p>
+            </div>
+            <div class="flex flex-col text-center">
+              <div class="text-2xl md:text-5xl text-primary font-asap font-bold mb-6">130</div>
+              <hr class="w-16 h-1 bg-text-primary border-none mx-auto">
+              <p class="mt-6 text-text-primary font-semibold">Customers every month</p>
+            </div>
+            <div class="flex flex-col text-center">
+              <div class="text-2xl md:text-5xl text-primary font-asap font-bold mb-6">12</div>
+              <hr class="w-16 h-1 bg-text-primary border-none mx-auto">
+              <p class="mt-6 text-text-primary font-semibold">Swaths in California</p>
+            </div>
+            <div class="flex flex-col text-center">
+              <div class="text-2xl md:text-5xl text-primary font-asap font-bold mb-6">3946</div>
+              <hr class="w-16 h-1 bg-text-primary border-none mx-auto">
+              <p class="mt-6 text-text-primary font-semibold">Bees working for you</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contacts -->
+      <section class="background-primary bg-[url(/img/contact-hero.png)] bg-contain bg-no-repeat py-30" id="contact-us">
+        <div class="custom-container flex-wrap md:flex-nowrap">
+          <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-x-2 gap-y-8">
+            <div class="p-4 pb-0">
+              <p class="tracking-(--letter-spacing) text-primary font-semibold">CONTACTS</p>
+              <h2 class="text-4xl md:text-5xl font-bold text-text-primary mt-10 mb-6 font-asap">CONTACT US ANYTIME</h2>
+              <hr class="w-16 h-1 bg-primary border-none">
+              <p class="text-pretty mt-6 text-lg font-light">
+                Feel free to contact for any inquiries or commercial offers:
+              </p>
+              <div class="mt-16 md:pr-4">
+                <div class="flex flex-row mb-10 w-full">
+                  <div class="text-text-primary font-asap text-2xl flex justify-start items-center w-40">Address</div>
+                  <div class="">
+                    <p class="text-pretty text-lg font-light">44670 Mattole Rd, Honeydrew, <br>CA 95545</p>
+                  </div>
+                </div>
+                <div class="flex mb-10 w-full">
+                  <div class="text-text-primary font-asap text-2xl flex justify-start items-center w-40">Hours</div>
+                  <div class="">
+                    <p class="text-pretty text-lg font-light">Monday - Saturday: 11 AM - 9 PM <br> Sunday: 11 AM - 7 PM</p>
+                  </div>
+                </div>
+                <div class="flex mb-10 w-full">
+                  <div class="text-text-primary font-asap text-2xl flex justify-start items-center w-40">Contacts</div>
+                  <div class="">
+                    <p class="text-pretty text-lg font-light">+1 (234) 567 89 00 <br> honeybee@email.com</p>
+                  </div>
+                </div>
+              </div>
+              <div style="height:200px;-webkit-filter:grayscale(100%);filter: grayscale(100%);" class="rounded-md">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3045.424828890913!2d-124.123704!3d40.244089!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sus!4v1748278398574!5m2!1sit!2sus"
+                        height="200"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-md w-full">
+                </iframe>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-10 flex flex-col w-full py-20 lg:py-30 px-10 lg:px-25">
+              <form>
+                <input type="text" placeholder="Enter your full name*" required class="w-full bg-background-primary px-4 py-3 rounded-md mb-6 text-text-primary" />
+                <input type="tel" placeholder="Enter your phone number*" required class="w-full bg-background-primary px-4 py-3 rounded-md mb-6 text-text-primary" />
+                <input type="email" placeholder="Enter your e-mail*" required class="w-full bg-background-primary px-4 py-3 rounded-md mb-6 text-text-primary" />
+                <textarea placeholder="Type your message" required class="w-full bg-background-primary px-4 py-3 rounded-md resize-none text-text-primary" maxlength="2000" rows="5"></textarea>
+                <button type="submit" class="button button-primary mt-20 w-full">Request a Quote</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="background-primary bg-[url(/img/footer-img.png)] bg-cover bg-no-repeat pt-30 pb-4">
+        <div class="custom-container flex-col">
+          <div class="flex flex-col items-center">
+            <img src="/img/logo-footer.svg" alt="logo" class="w-20 mb-2" />
+            <div class="text-gray-500 text-center">Honey Production Company</div>
+          </div>
+          <div class="my-4">
+            <ul class="flex flex-col lg:flex-row items-center justify-between w-full font-semibold">
+              <li class="mr-6 px-4 py-2"><a href="#about-us" class="text-text-primary hover:text-primary">About us</a></li>
+              <li class="mr-6 px-4 py-2"><a href="#store" class="text-text-primary hover:text-primary">Store</a></li>
+              <li class="mr-6 px-4 py-2"><a href="#testimonials" class="text-text-primary hover:text-primary">Testimonials</a></li>
+              <li class="mr-6 px-4 py-2"><a href="#contact-us" class="text-text-primary hover:text-primary">Contact Us</a></li>
+            </ul>
+          </div>
+          <p class="font-light"><small>Created by <a href="https://stefanosatta.vercel.app" class="hover:underline">Stefano Satta</a></small></p>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/script/main.js"></script>
+    <script type="module" src="/src/script/carousel.js"></script>
+  </body>
+</html>

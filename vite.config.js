@@ -4,5 +4,7 @@ export default defineConfig({
     plugins: [
         tailwindcss(),
     ],
-    base: '/honey-company-website/'
+    base: '/honey-company-website/',
+    root: './',
+    appType: "mpa"
 })
